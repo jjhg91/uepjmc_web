@@ -1,3 +1,3 @@
-FROM nginx:1.24.0-alpine3.17-slim
+FROM php:8.0.7-apache
 WORKDIR /var/www/html/
 COPY ./ ./
