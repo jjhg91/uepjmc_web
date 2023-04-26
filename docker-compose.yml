@@ -2,8 +2,8 @@ version: "3.9"
 
 services:
 
-    uepjmc-web:
-        container_name: uepjmc-web
+    uepjmc-web_dev:
+        container_name: uepjmc-web_dev
         image: "php:8.0.7-apache"
         port:
           - 3030:80
