@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+
+    uepjmc-web:
+        container_name: uepjmc-web
+        image: "php:8.0.7-apache"
+        port:
+          - 3030:80
+        #expose:
+        #    - 80
+        volumes:
+            - ./:/var/www/html/
+        environment:
+            - VIRTUAL_HOST=uepjmc.com.ve,www.uepjmc.com.ve
+            #- LETSENCRYPT_HOST=uepjmc.com.ve,www.uepjmc.com.ve
+            #- LETSENCRYPT_EMAIL=admin@uepjmc.com.ve
