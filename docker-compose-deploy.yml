@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  uepjmc-web:
+    container_name: uepjmc-web
+    build: .
+    expose:
+      - 80
+    environment:
+      - VIRTUAL_HOST=juanherrera.iutjmc.com.ve
+      #- VIRTUAL_PORT=80
+      #- LETSENCRYPT_HOST=iutjmc.com.ve
+      #- LETSENCRYPT_EMAIL=admin@iutjmc.com.ve
+
+networks:
+  default:
+    name: cloud_default
